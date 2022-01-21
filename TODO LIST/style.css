@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(120deg,#f5c62e,#ff810b);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+h1{
+  font-size: 2.7rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: none;
+  background: white;
+  color:#f5c62e;
+  outline: none;
+  font-family: 'Poppins' , sans-serif;
+}
+
+form input{
+  color: black;
+}
+
+form button:hover {
+  color:white;
+    background-color:#fd8f28;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+  background-color:#fd8f28;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1rem;
+}
+.complete-btn {
+  background-color: rgb(141, 218, 27);
+}
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/*CUSTOM SELECTOR */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+
+/* Custom Select */
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+select {
+  color: black;
+  width: 12rem;
+  cursor: pointer;
+  padding: 1rem;
+  font-family: 'Poppins',sans-serif;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  color:#f5c62e;
+  background-color: white;
+  top:0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.select:hover::after{
+  background-color: #fd8f28;
+  color: white;
+}
+
+
