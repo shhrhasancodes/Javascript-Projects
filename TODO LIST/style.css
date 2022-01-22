@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 body {
-  background-image: linear-gradient(120deg,#f5c62e,#ff810b);
+  background-image: linear-gradient(120deg,#ec8626,#bd102d);
   color: white;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
 }
 h1{
-  font-size: 2.7rem;
+  font-size: 3rem;
 }
 
 header,
@@ -25,10 +25,10 @@ form input,
 form button {
   padding: 0.5rem;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 500;
   border: none;
   background: white;
-  color:#f5c62e;
+  color:#bd102d;
   outline: none;
   font-family: 'Poppins' , sans-serif;
 }
@@ -39,7 +39,7 @@ form input{
 
 form button:hover {
   color:white;
-    background-color:#fd8f28;
+    background-color:#ec8626;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -72,7 +72,7 @@ form button:hover {
 
 .trash-btn,
 .complete-btn {
-  background-color:#fd8f28;
+  background-color:#bd102d;
     color: aliceblue;
     border: none;
     cursor: pointer;
@@ -130,7 +130,7 @@ select {
 .select::after {
   content: "\25BC";
   position: absolute;
-  color:#f5c62e;
+  color:#bd102d;
   background-color: white;
   top:0;
   right: 0;
@@ -140,15 +140,16 @@ select {
 }
 
 .select:hover::after{
-  background-color: #fd8f28;
+  background-color: #ec8626;
   color: white;
 }
 
+
 @media screen and (min-width:300px) and (max-width:600px) {
   input{
-    max-width: 30%;
+    max-width: 35%;
   }
   .select{
-    max-width: 25%;
+    max-width: 13%;
   }
 }
