@@ -2,6 +2,42 @@
     margin-top: 100px;
     text-align: center;
 }
+.innercontainer{
+    background-color: rgb(240, 240, 240);
+    width: 350px;
+    padding: 20px;
+    border-radius: 7px;
+    margin: auto;
+}
+
+#screen{
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-family: 'Poppins' , sans-serif;
+}
+
+.digit{
+    background-color: white;
+    border-radius: 6px;
+}
+
+.clear{
+    background-color:rgb(215, 221, 221);
+    border-radius: 6px;
+}
+
+.operators{
+    background-color:rgb(253, 176, 33);
+    border-radius: 6px;
+    font-weight:bold;
+}
+
+.equalsto{
+    background-color:rgb(76, 195, 195);
+    border-radius: 6px;
+    font-weight:bold;
+}
 
 table{
     margin: auto;
