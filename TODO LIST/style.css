@@ -145,11 +145,16 @@ select {
 }
 
 
-@media screen and (min-width:300px) and (max-width:600px) {
+@media screen and (min-width:300px) and (max-width:750px) {
   input{
     max-width: 35%;
   }
   .select{
-    max-width: 13%;
+    max-width: 12%;
+  }
+
+  input,
+  input::-webkit-input-placeholder {
+    font-size: 22px;
   }
 }
