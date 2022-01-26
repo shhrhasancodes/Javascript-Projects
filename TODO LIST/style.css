@@ -150,11 +150,11 @@ select {
     max-width: 35%;
   }
   .select{
-    max-width: 12%;
+    max-width: 13%;
   }
 
   input,
   input::-webkit-input-placeholder {
-    font-size: 22px;
+    font-size: 19px;
   }
 }
