@@ -38,3 +38,18 @@
     left:45.5%;
     transform-origin: bottom;
 }
+
+@media screen and (min-width:300px) and (max-width:700px) {
+    .container{
+        position: relative;
+        height: 90vw;
+        width: 90vw;
+        background: url("clock.png") no-repeat;
+        margin: auto;
+        margin-top: 130px;
+        background-size: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
