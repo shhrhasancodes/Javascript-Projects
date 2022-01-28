@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Recognition App</title>
+    <link rel="shortcut icon" href="micc.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            font-family: 'Poppins' , sans-serif;
+        }
+
+        body{
+            background-color: rgb(250, 246, 241);
+        }
+
+        button{
+            background-color: rgb(253, 153, 30);
+            outline: none;
+            border: none;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: white;
+            margin-top: 180px;
+        } 
+
+        h3{
+            padding-top: 25px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:rgb(49, 48, 48);
+        }
+
+        button:hover{
+            background-color: rgb(253, 140, 2);
+        }
+
+    </style>
+</head>
+<body>
+    
+   
+    <button class="button" type ="button">Speak Something!</button>
+    <h3 class="content"></h3>
+
+    <script src="speech.js"></script>
+</body>
+</html>
