@@ -1,6 +1,9 @@
 const cvs = document.getElementById('snake');
 const ctx = cvs.getContext('2d');
-
+WIDTH = 620;
+HEIGHT = 500;
+cvs.heigh = HEIGHT;
+cvs.width = WIDTH;
 const box = 32;
 
 const ground = new Image();
@@ -104,11 +107,23 @@ function draw() {
         snake.pop();
     }
 
+    window.addEventListener("keydown" , (e)=>{
+        if(e.keyCode == 13){
+            window.location.reload();
+        }
+    });
 
     if(snakeX < box || snakeX > 17*box || snakeY < 3*box || snakeY > 17*box || collision(newHead , snake))
     {
         clearInterval(game);
         dead.play();
+        var gradient = ctx.createLinearGradient(0,0,cvs.width,0);
+        gradient.addColorStop("0" , "magenta");
+        gradient.addColorStop("0.5" , "#0af0dd");
+        gradient.addColorStop("1.0" , "red");
+        ctx.font = "50px Verdana";
+        ctx.fillStyle = gradient; 
+        ctx.fillText("GAME OVER!"  , cvs.width / 4.5 , cvs.height / 1.8);
     }
 
     snake.unshift(newHead);
