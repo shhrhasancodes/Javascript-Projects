@@ -67,17 +67,23 @@ function draw() {
     ctx.drawImage(ground,0,0);
 
     for(let i=0 ; i< snake.length ; i++){
-        ctx.fillStyle = (i==0)?"red":"white";
+        ctx.fillStyle = (i==0)?"purple":"yellow";
         ctx.fillRect(snake[i].x , snake[i].y , box , box);
 
-        ctx.strokeStyle = "green"; 
+        ctx.strokeStyle = "red"; 
         ctx.strokeRect(snake[i].x , snake[i].y , box , box);
     }
 
     ctx.drawImage(foodImg , food.x , food.y);
 
-    ctx.fillStyle = "white";
+    
     ctx.font = "45px Verdana";
+    var gradient = ctx.createLinearGradient(0,0,cvs.width,0);
+        gradient.addColorStop("0" , "magenta");
+        gradient.addColorStop("0.5" , "#0af0dd");
+        gradient.addColorStop("1.0" , "red");
+        ctx.font = "50px Verdana";
+        ctx.fillStyle = gradient; 
     ctx.fillText(score , 2.5*box , 1.6*box);
 
     let snakeX = snake[0].x;

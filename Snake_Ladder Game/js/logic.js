@@ -180,7 +180,7 @@ function Player(color,playerNumber){
         if(this.position==boxArr.length-1){
             win.play();
             // alert('Player'+this.playerNumber+' wins!!!\nPlease press enter to restart the game.');
-            ctx.fillStyle = "white";
+            ctx.fillStyle = "black";
             ctx.font = "50px Verdana";
             // var gradient = ctx.createLinearGradient(0,0,canvas.width,0);
             // gradient.addColorStop("0" , "magenta");
@@ -188,7 +188,7 @@ function Player(color,playerNumber){
             // gradient.addColorStop("1.0" , "red");
             // ctx.fillStyle = gradient;
             ctx.fillText('Player '+this.playerNumber+' wins!' , canvas.width / 5.5 , canvas.height / 2);
-            cntx.fillStyle = "white";
+            cntx.fillStyle = "black";
             cntx.font = "20px Verdana";
             cntx.fillText('Please press enter to restart the game' , canvas.width / 6.3 , canvas.height / 1.7);
             
@@ -200,7 +200,7 @@ function Player(color,playerNumber){
         if(this.position==95){
             
             _canvasObj.FillCircle(currentPos.x+currentPos.size/2,currentPos.y+currentPos.size/2,boxSize/3,0,2*Math.PI,false,this.color);
-            this.position=59;
+            this.position=61;
             eat.play();
             setTimeout(()=>{
                 currentPos=boxArr[this.position];
