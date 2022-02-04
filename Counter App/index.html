@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <link rel="shortcut icon" href="counter.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            font-family: 'Poppins' , sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(250, 246, 241);
+        }
+
+        .button1{
+            background-color: rgb(253, 153, 30);
+            outline: none;
+            border: none;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            cursor: pointer;
+            color: white;
+            margin-right: 10px;
+            font-size: larger;
+        } 
+        .button2{
+            background-color: rgb(253, 153, 30);
+            outline: none;
+            border: none;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            cursor: pointer;
+            color: white;   
+            font-size: larger;
+        }
+
+        .container{
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 200px;
+        }
+        .button3{
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 80px;
+            outline: none;
+            border: none;
+            background-color: rgb(250, 65, 65);
+            width:70px;
+            height: 30px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .button3:hover{
+            background-color:rgb(255, 44, 44) ;
+        }
+
+
+
+        button:hover{
+            background-color: rgb(253, 140, 2);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+    <button class="button1" type ="button"></button>
+    <button class="button2" type ="button">+</button>
+    </div>
+    
+    <button class="button3" type ="button">Reset</button>
+
+    <script src="count.js"></script>
+</body>
+</html>
